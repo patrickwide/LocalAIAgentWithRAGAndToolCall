@@ -45,7 +45,7 @@ pip install -r requirements.txt
 4. Make sure Ollama is running with the required models:
 
 ```bash
-ollama pull llama2
+ollama pull llama3.2
 ollama pull mxbai-embed-large
 ```
 
