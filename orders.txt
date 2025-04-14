@@ -1,0 +1,1 @@
+{"order_timestamp": "2025-04-14T10:38:36.766896", "pizza_type": "Veggie", "size": "Large", "quantity": 1, "crust_type": "Regular", "extra_toppings": [], "delivery_address": "456 Oak Avenue", "customer_name": null, "phone_number": null, "status": "Received"}
