@@ -22,6 +22,7 @@ DB_LOCATION = "./chrome_langchain_db_reviews"
 CSV_PATH = "realistic_restaurant_reviews.csv" # Make sure this file exists or a dummy will be created
 ORDER_FILE = "orders.txt" # File to save orders
 OLLAMA_MODEL = "llama3.2" # Specify your desired Ollama model
+EMBEDDING_MODEL = "mxbai-embed-large" # Specify your desired embedding model
 
 def setup_vector_store():
     """Initializes the vector store and retriever."""
@@ -46,7 +47,7 @@ def setup_vector_store():
         if not {'Title', 'Review', 'Rating', 'Date'}.issubset(df.columns):
             raise ValueError("CSV must contain 'Title', 'Review', 'Rating', 'Date' columns.")
 
-        embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+        embeddings = OllamaEmbeddings(model=EMBEDDING_MODEL)
 
         # Decide if we need to add documents (fresh DB or empty)
         add_documents = True

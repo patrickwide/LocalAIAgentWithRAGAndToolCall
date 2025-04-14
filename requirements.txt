@@ -2,3 +2,6 @@ langchain
 langchain-ollama
 langchain-chroma
 pandas
+ollama
+chromadb
+python-dotenv
